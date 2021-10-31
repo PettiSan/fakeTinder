@@ -1,0 +1,17 @@
+.footer {
+  @apply bg-white px-8 py-5 rounded-b-3xl;
+
+  nav {
+    ul {
+      @apply flex justify-between;
+
+      li {
+        @apply text-xl cursor-pointer;
+
+        &.active {
+          @apply text-red;
+        }
+      }
+    }
+  }
+}

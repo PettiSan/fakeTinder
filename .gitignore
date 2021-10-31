@@ -1,0 +1,12 @@
+node_modules
+.DS_Store
+dist
+dist-ssr
+*.local
+.env
+src/__generatedTypes__
+graphql-schema.json
+stats.html
+dist-storybook
+.env.production
+.env.local

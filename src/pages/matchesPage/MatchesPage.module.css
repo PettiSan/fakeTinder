@@ -1,0 +1,23 @@
+.matchesPage {
+  @apply space-y-3 px-2;
+
+  .matchesPage_searchBar {
+    @apply flex items-center space-x-3;
+
+    input {
+      @apply bg-transparent border-b border-solid border-red flex-1;
+    }
+
+    .matchesPage_searchBar_icon {
+      @apply text-red text-2xl pt-2;
+    }
+  }
+
+  .matchesPage_sectionWrapper {
+    @apply flex flex-col space-y-4;
+  }
+
+  .matchesPage_sectionTitle {
+    @apply text-red text-base font-medium;
+  }
+}

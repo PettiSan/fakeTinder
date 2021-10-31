@@ -1,0 +1,7 @@
+.header {
+  @apply py-3 px-4 rounded-t-3xl;
+
+  img {
+    @apply rounded-full h-10 w-10;
+  }
+}

@@ -1,0 +1,15 @@
+.cardNewMatch {
+  @apply bg-transparent space-y-2 cursor-pointer;
+
+  .cardNewMatch_img {
+    @apply h-[6.25rem] w-[5.1875rem];
+
+    img {
+      @apply h-full w-full rounded-md object-cover;
+    }
+  }
+
+  span {
+    @apply block text-sm font-medium text-center;
+  }
+}

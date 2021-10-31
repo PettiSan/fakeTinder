@@ -1,0 +1,7 @@
+.cardList {
+  @apply relative h-[40.625rem] w-full rounded-lg;
+
+  .swipe {
+    @apply absolute bottom-0;
+  }
+}

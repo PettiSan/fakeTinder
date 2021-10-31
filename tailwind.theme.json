@@ -1,0 +1,55 @@
+{
+  "fontFamily": {},
+  "container": {
+    "center": true
+  },
+  "colors": {
+    "transparent": "transparent",
+    "current": "currentColor",
+    "black": "#000000",
+    "white": "#FFFFFF",
+    "greyDark": "#A9A9A9",
+    "greyLight": "#F5F5F5",
+    "red": "#E80000",
+    "green": "#33FF66",
+    "purple": "#FF33FF",
+    "blue": "#6699FF",
+    "yellow": "#FFFF33"
+  },
+  "extend": {
+    "typography": {
+      "DEFAULT": {
+        "css": {
+          "color": "currentColor",
+          "a": {
+            "color": "currentColor",
+            "&:hover": {
+              "color": "currentColor"
+            }
+          },
+          "strong": {
+            "color": "currentColor"
+          },
+          "hr": {
+            "borderColor": "currentColor"
+          },
+          "blockquote": {
+            "color": "currentColor"
+          },
+          "h1": {
+            "color": "currentColor"
+          },
+          "h2": {
+            "color": "currentColor"
+          },
+          "h3": {
+            "color": "currentColor"
+          },
+          "h4": {
+            "color": "currentColor"
+          }
+        }
+      }
+    }
+  }
+}

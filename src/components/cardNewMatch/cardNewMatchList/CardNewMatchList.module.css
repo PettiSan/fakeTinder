@@ -1,0 +1,9 @@
+.cardNewMatchList {
+  @apply flex space-x-2;
+
+  > div:first-of-type {
+    img {
+      @apply bg-white border-greyDark border-2 border-solid p-1;
+    }
+  }
+}

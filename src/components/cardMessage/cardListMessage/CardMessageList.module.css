@@ -1,0 +1,23 @@
+.cardMessageList {
+  @apply max-h-[25rem] space-y-3 overflow-y-auto;
+
+  &::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    @apply bg-greyLight;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+    @apply bg-red;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    @apply bg-greyDark;
+  }
+}

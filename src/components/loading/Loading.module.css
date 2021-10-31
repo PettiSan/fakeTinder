@@ -1,0 +1,4 @@
+.loading {
+  @apply w-7 h-7 border-4 border-white rounded-full animate-spin cursor-wait;
+  border-left-color: transparent;
+}
