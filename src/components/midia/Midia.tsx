@@ -22,6 +22,8 @@ export default function Midia(props: VideoProps) {
     if (pathname === PATHS.home || pathname === PATHS.itsAMatche) {
       videoRef?.current?.pause()
 
+      audio.play()
+
       audio.volume = 0.1
       audio.autoplay = true
       audio.loop = true
