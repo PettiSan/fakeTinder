@@ -1,1 +1,1 @@
-# Reiejtado sim. Ignorado não!
+# Rejeitado sim. Ignorado não!
