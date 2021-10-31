@@ -1,3 +1,13 @@
+import img1 from '@assets/10_10_cute.png'
+import img5 from '@assets/card_board_games.png'
+import img9 from '@assets/card_canada.png'
+import img6 from '@assets/card_karambit_autotronic.png'
+import img7 from '@assets/card_lamen.png'
+import img10 from '@assets/card_massa_brocolis.png'
+import img4 from '@assets/card_naruto_smile.png'
+import img8 from '@assets/card_the_chefs.png'
+import img2 from '@assets/card_tlou2.png'
+import img3 from '@assets/card_vingaceiros.png'
 import teste from '@assets/teste.gif'
 import { Card } from '@components/card/Card'
 import clsx from 'clsx'
@@ -12,43 +22,43 @@ type Card = {
 const db: Card = [
   {
     title: 'Filipe Petitemberte',
-    url: './src/assets/10_10_cute.png',
+    url: img1,
   },
   {
     title: 'TLOU2',
-    url: './src/assets/card_tlou2.png',
+    url: img2,
   },
   {
     title: 'Vingaceiros',
-    url: './src/assets/card_vingaceiros.png',
+    url: img3,
   },
   {
     title: 'Naruto',
-    url: './src/assets/card_naruto_smile.png',
+    url: img4,
   },
   {
     title: 'Board Games',
-    url: './src/assets/card_board_games.png',
+    url: img5,
   },
   {
     title: 'CSGO Karambit',
-    url: './src/assets/card_karambit_autotronic.png',
+    url: img6,
   },
   {
     title: 'Lamen',
-    url: './src/assets/card_lamen.png',
+    url: img7,
   },
   {
     title: 'The Chefs',
-    url: './src/assets/card_the_chefs.png',
+    url: img8,
   },
   {
     title: 'Canada',
-    url: './src/assets/card_canada.png',
+    url: img9,
   },
   {
     title: 'Massa de Brócolis com Molho Branco',
-    url: './src/assets/card_massa_brocolis.png',
+    url: img10,
   },
 ]
 
