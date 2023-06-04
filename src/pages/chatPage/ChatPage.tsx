@@ -28,8 +28,7 @@ const db: Messages = [
     date: 'sábado 01:18',
     messages: [
       {
-        text:
-          'Boa noite, procurei Massa de Brocólis no google e só apareceu pizzas, é isso mesmo, kkkkk?',
+        text: 'Boa noite, procurei Massa de Brocólis no google e só apareceu pizzas, é isso mesmo, kkkkk?',
         from: FROM_WHO.OTHER,
         displayAvatar: true,
       },

@@ -1,5 +1,5 @@
 import clsx from 'clsx'
-import React, { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useLocation } from 'react-router'
 import { PATHS } from 'router/Paths'
 import styles from './Midia.module.css'

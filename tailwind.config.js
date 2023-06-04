@@ -1,6 +1,6 @@
 const theme = require('./tailwind.theme.json')
 
-const purge = [
+const content = [
   './src/**/*.html',
   './src/**/*.tsx',
   './src/**/*.ts',
@@ -11,9 +11,8 @@ const purge = [
 ]
 
 module.exports = {
+  content,
   mode: 'jit',
-  purge: purge,
-  darkMode: false,
   extend: {},
   theme: theme,
   variants: {},

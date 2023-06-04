@@ -1,6 +1,6 @@
 import clsx from 'clsx'
-import React, { useCallback } from 'react'
-import { useHistory } from 'react-router'
+import { useCallback } from 'react'
+import { useNavigate } from 'react-router-dom'
 import TinderCard from 'react-tinder-card'
 import { PATHS } from 'router/Paths'
 import styles from './Card.module.css'
@@ -13,16 +13,16 @@ type CardProps = {
 export function Card(props: CardProps) {
   const { img, title } = props
 
-  const { push } = useHistory()
+  const navigate = useNavigate()
 
   const handleCardLeftScreen = useCallback(
     (identifier: string) => {
-      // último card
+      // * último card
       if (identifier === 'Filipe Petitemberte') {
-        push(PATHS.itsAMatche)
+        navigate(PATHS.itsAMatche)
       }
     },
-    [push]
+    [navigate]
   )
 
   return (

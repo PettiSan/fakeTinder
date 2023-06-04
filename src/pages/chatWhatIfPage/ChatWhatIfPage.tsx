@@ -26,8 +26,7 @@ const db: Messages = [
     date: 'sábado 01:18',
     messages: [
       {
-        text:
-          'Boa noite, procurei Massa de Brocólis no google e só apareceu pizzas, é isso mesmo, kkkkk?',
+        text: 'Boa noite, procurei Massa de Brocólis no google e só apareceu pizzas, é isso mesmo, kkkkk?',
         from: FROM_WHO.OTHER,
         displayAvatar: true,
       },
@@ -62,8 +61,7 @@ const db: Messages = [
         from: FROM_WHO.ME,
       },
       {
-        text:
-          'Que da hora, eu ganho uma grana criando os sites por ai, uma gelera até me chama de programador',
+        text: 'Que da hora, eu ganho uma grana criando os sites por ai, uma gelera até me chama de programador',
         from: FROM_WHO.OTHER,
         displayAvatar: true,
       },
@@ -85,13 +83,11 @@ const db: Messages = [
         from: FROM_WHO.OTHER,
       },
       {
-        text:
-          'Jogo sim, atualmente tenho jogado só CSGO de vez em quando com os amigos',
+        text: 'Jogo sim, atualmente tenho jogado só CSGO de vez em quando com os amigos',
         from: FROM_WHO.OTHER,
       },
       {
-        text:
-          'Mas jogo qualquer jogo basicamente, já fui viciado em LoL na adolescência, joguei MMORPG, jogo uns Boards Games tbm',
+        text: 'Mas jogo qualquer jogo basicamente, já fui viciado em LoL na adolescência, joguei MMORPG, jogo uns Boards Games tbm',
         from: FROM_WHO.OTHER,
         displayAvatar: true,
       },
@@ -114,8 +110,7 @@ const db: Messages = [
         from: FROM_WHO.ME,
       },
       {
-        text:
-          'Tipo, já comeu comida boa de verdade? Tipo um Hamburguer topzera? Outback?',
+        text: 'Tipo, já comeu comida boa de verdade? Tipo um Hamburguer topzera? Outback?',
         from: FROM_WHO.OTHER,
         displayAvatar: true,
       },
@@ -142,8 +137,7 @@ const db: Messages = [
     date: 'quinta 10:22',
     messages: [
       {
-        text:
-          'Se quiser está convidada, podemos ir qualquer dia lá, uns dos restaurantes',
+        text: 'Se quiser está convidada, podemos ir qualquer dia lá, uns dos restaurantes',
         from: FROM_WHO.OTHER,
       },
       {

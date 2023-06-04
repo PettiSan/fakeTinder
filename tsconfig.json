@@ -3,7 +3,7 @@
     "baseUrl": "./src",
     "target": "ES6",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "types": ["vite/client", "jest"],
+    "types": ["vite/client"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -15,14 +15,13 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react",
+    "jsx": "react-jsx",
     "paths": {
       "@components/*": ["./components/*"],
       "@template/*": ["./template/*"],
       "@pages/*": ["./pages/*"],
       "@assets/*": ["./assets/*"],
-      "@icons/*": ["./icons/*"],
-      "@graphql-types/*": ["./__generatedTypes__/*"]
+      "@icons/*": ["./icons/*"]
     },
 
     "plugins": [{ "name": "typescript-plugin-css-modules" }]
