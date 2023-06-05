@@ -1,10 +1,8 @@
-import avatarFile from '@assets/10_10_corolla.png'
+import avatarFile from '@assets/card_10_10_loiro.jpg'
 import Avatar from '@components/avatar/Avatar'
+import { CalendarButton } from '@components/calendarButton/CalendarButton'
 import ChatTemplate from '@template/chat/ChatTemplate'
 import clsx from 'clsx'
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { PATHS } from 'router/Paths'
 import styles from './ChatPage.module.css'
 
 enum FROM_WHO {
@@ -25,173 +23,127 @@ type Message = {
 
 const db: Messages = [
   {
-    date: 'sábado 01:18',
+    date: 'sábado 20:18',
     messages: [
       {
-        text: 'Boa noite, procurei Massa de Brocólis no google e só apareceu pizzas, é isso mesmo, kkkkk?',
+        text: 'Qual desses é melhor?',
+        from: FROM_WHO.ME,
+      },
+      {
+        text: 'esse por 100 a mais está valendo',
         from: FROM_WHO.OTHER,
         displayAvatar: true,
+      },
+      {
+        text: 'por tudo o que eu pesquisei a respeito está valendo hein, pelo preço está bom👍🏻',
+        from: FROM_WHO.OTHER,
+      },
+      {
+        text: 'beleza, muito obrigado seu fake loiro lindo 😍',
+        from: FROM_WHO.ME,
+      },
+      {
+        text: 'que isso gata, calma 😏',
+        from: FROM_WHO.OTHER,
+        displayAvatar: true,
+      },
+      {
+        text: 'ur welcome, night night ai 😚',
+        from: FROM_WHO.OTHER,
+      },
+    ],
+  },
+  {
+    date: 'domingo 14:25',
+    messages: [
+      {
+        text: 'Ouu, iae minha querida, quinta agora é feriado... lembra o que rolou na última vez que tivemos feriado na quinta né?',
+        from: FROM_WHO.OTHER,
+        displayAvatar: true,
+      },
+      {
+        text: 'Claro, umas das melhores noite do ano',
+        from: FROM_WHO.ME,
+      },
+      {
+        text: 'como poderia esquecer...?',
+        from: FROM_WHO.ME,
+      },
+      {
+        text: 'To ligado... então bora repetir 😈',
+        from: FROM_WHO.OTHER,
+      },
+      {
+        text: 'Quarta ás 20hrs, passo ai de carro, ai vamos para o Outback',
+        from: FROM_WHO.OTHER,
+      },
+      {
+        text: 'Bah só quarta? Queria que fosse antes 😒',
+        from: FROM_WHO.ME,
+      },
+      {
+        text: 'Bah é que tem NBA nos outros dias, sabe... prioridades 🏀🏀🏀',
+        from: FROM_WHO.OTHER,
+        displayAvatar: true,
+      },
+      {
+        text: 'é sério??? 😡😡',
+        from: FROM_WHO.ME,
+      },
+      {
+        text: 'Filipe?',
+        from: FROM_WHO.ME,
+      },
+      {
+        text: '???????',
+        from: FROM_WHO.ME,
+      },
+      {
+        text: '???',
+        from: FROM_WHO.ME,
+      },
+    ],
+  },
+  {
+    date: 'segunda 09:49',
+    messages: [
+      {
+        text: 'oii, bom dia feia, foi mal, por demorar para responder 😁',
+        from: FROM_WHO.OTHER,
+        displayAvatar: true,
+      },
+      {
+        text: 'só posso quarta mesmo, vai ter que segurar a saudade...',
+        from: FROM_WHO.OTHER,
+      },
+      {
+        text: 'Quarta, passo ai de carro ás 20hrs, vamos para o Outback do Praia de Belas ai perto, bater um papo e rir',
+        from: FROM_WHO.OTHER,
+      },
+      {
+        text: 'dependendo de como as coisas forem, te levo para conhecer o VisAVis, mas sem promessas, ok?',
+        from: FROM_WHO.OTHER,
+      },
+      {
+        text: 'bom dia, combinado 🤩',
+        from: FROM_WHO.ME,
+      },
+      {
+        text: 'o que é VisAVis?',
+        from: FROM_WHO.ME,
+      },
+      {
+        text: 'hahaha, segredo, quarta eu te conto😉',
+        from: FROM_WHO.OTHER,
+        displayAvatar: true,
+      },
+      {
+        text: '😒',
+        from: FROM_WHO.ME,
       },
     ],
   },
 ]
-
-/* const db = [
-  {
-    date: 'domingo 01:18',
-    messages: [
-      {
-        text: 'Boa noite, sabe cantar alguma música da da Dua Lipa?',
-        from: FROM_WHO.ME,
-      },
-      {
-        text: 'Boa noite nem sei quem é kkkk',
-        from: FROM_WHO.OTHER,
-      },
-      {
-        text: 'Mas se for rock, podemos conversar a respeito',
-        from: FROM_WHO.OTHER,
-        displayAvatar: true,
-      },
-      {
-        text: ':(',
-        from: FROM_WHO.ME,
-      },
-    ],
-  },
-  {
-    date: 'terça 14:18',
-    messages: [
-      {
-        text: 'Boa noite, sabe cantar alguma música da da Dua Lipa?',
-        from: FROM_WHO.ME,
-      },
-      {
-        text: 'Boa noite nem sei quem é kkkk',
-        from: FROM_WHO.OTHER,
-      },
-      {
-        text: 'Mas se for rock, podemos conversar a respeito',
-        from: FROM_WHO.OTHER,
-        displayAvatar: true,
-      },
-      {
-        text: ':(',
-        from: FROM_WHO.ME,
-      },
-    ],
-  },
-  {
-    date: 'terça 14:18',
-    messages: [
-      {
-        text: 'Boa noite, sabe cantar alguma música da da Dua Lipa?',
-        from: FROM_WHO.ME,
-      },
-      {
-        text: 'Boa noite nem sei quem é kkkk',
-        from: FROM_WHO.OTHER,
-      },
-      {
-        text: 'Mas se for rock, podemos conversar a respeito',
-        from: FROM_WHO.OTHER,
-        displayAvatar: true,
-      },
-      {
-        text: ':(',
-        from: FROM_WHO.ME,
-      },
-    ],
-  },
-  {
-    date: 'terça 14:18',
-    messages: [
-      {
-        text: 'Boa noite, sabe cantar alguma música da da Dua Lipa?',
-        from: FROM_WHO.ME,
-      },
-      {
-        text: 'Boa noite nem sei quem é kkkk',
-        from: FROM_WHO.OTHER,
-      },
-      {
-        text: 'Mas se for rock, podemos conversar a respeito',
-        from: FROM_WHO.OTHER,
-        displayAvatar: true,
-      },
-      {
-        text: ':(',
-        from: FROM_WHO.ME,
-      },
-    ],
-  },
-  {
-    date: 'terça 14:18',
-    messages: [
-      {
-        text: 'Boa noite, sabe cantar alguma música da da Dua Lipa?',
-        from: FROM_WHO.ME,
-      },
-      {
-        text: 'Boa noite nem sei quem é kkkk',
-        from: FROM_WHO.OTHER,
-      },
-      {
-        text: 'Mas se for rock, podemos conversar a respeito',
-        from: FROM_WHO.OTHER,
-        displayAvatar: true,
-      },
-      {
-        text: ':(',
-        from: FROM_WHO.ME,
-      },
-    ],
-  },
-  {
-    date: 'terça 14:18',
-    messages: [
-      {
-        text: 'Boa noite, sabe cantar alguma música da da Dua Lipa?',
-        from: FROM_WHO.ME,
-      },
-      {
-        text: 'Boa noite nem sei quem é kkkk',
-        from: FROM_WHO.OTHER,
-      },
-      {
-        text: 'Mas se for rock, podemos conversar a respeito',
-        from: FROM_WHO.OTHER,
-        displayAvatar: true,
-      },
-      {
-        text: ':(',
-        from: FROM_WHO.ME,
-      },
-    ],
-  },
-  {
-    date: 'terça 14:18',
-    messages: [
-      {
-        text: 'Boa noite, sabe cantar alguma música da da Dua Lipa?',
-        from: FROM_WHO.ME,
-      },
-      {
-        text: 'Boa noite nem sei quem é kkkk',
-        from: FROM_WHO.OTHER,
-      },
-      {
-        text: 'Mas se for rock, podemos conversar a respeito',
-        from: FROM_WHO.OTHER,
-        displayAvatar: true,
-      },
-      {
-        text: ':(',
-        from: FROM_WHO.ME,
-      },
-    ],
-  },
-] */
 
 export default function ChatPage() {
   return (
@@ -218,12 +170,49 @@ export default function ChatPage() {
                 <span>{message.text}</span>
               </div>
             ))}
-
-            <div className={clsx(styles.chatPage_whatIf)}>
-              <Link to={PATHS.chatWhatIf}>Como poderia ter sido?</Link>
-            </div>
           </div>
         ))}
+
+        <div
+          className={clsx(
+            styles.chatPage_wrapper,
+            styles.chatPage_confirmation
+          )}
+        >
+          <ul>
+            <li>
+              <span>
+                Data: <b>07/06/2023</b>
+              </span>
+            </li>
+
+            <li>
+              <span>
+                Horário: <b>20:00</b>
+              </span>
+            </li>
+
+            <li>
+              <span>
+                Local: <b>Outback - Praia de Belas</b>
+              </span>
+            </li>
+
+            <li>
+              <span>
+                Participantes: <b>Filipe</b> & <b>Camila</b>
+              </span>
+            </li>
+
+            <li>
+              <span>
+                Valor: <b>TBD</b>
+              </span>
+            </li>
+          </ul>
+
+          <CalendarButton>ADICIONE NA AGENDA</CalendarButton>
+        </div>
       </div>
     </ChatTemplate>
   )

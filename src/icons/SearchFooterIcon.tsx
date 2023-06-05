@@ -1,6 +1,5 @@
-import React from 'react'
-import { RiSearch2Fill } from 'react-icons/ri'
+import { TbListSearch } from 'react-icons/tb'
 
 export function SearchFooterIcon() {
-  return <RiSearch2Fill />
+  return <TbListSearch />
 }

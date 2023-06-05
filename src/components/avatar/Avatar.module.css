@@ -1,5 +1,5 @@
 .avatar {
   img {
-    @apply rounded-full h-10 w-10;
+    @apply rounded-full h-10 w-10 object-cover object-center;
   }
 }

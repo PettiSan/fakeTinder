@@ -1,9 +1,9 @@
 import { ChatIcon } from '@icons/ChatIcon'
 import { DiamondIcon } from '@icons/DiamondIcon'
+import { PersonIcon } from '@icons/PersonIcon'
 import { SearchFooterIcon } from '@icons/SearchFooterIcon'
 import { TinderIcon } from '@icons/TinderIcon'
 import clsx from 'clsx'
-import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { PATHS } from 'router/Paths'
 import styles from './Footer.module.css'
@@ -15,29 +15,33 @@ export function Footer() {
     <footer className={clsx(styles.footer)}>
       <nav>
         <ul>
-          <li className={clsx(pathname === PATHS.home ? styles.active : '')}>
+          <li
+            className={clsx(
+              'icon',
+              pathname === PATHS.home ? styles.active : ''
+            )}
+          >
             <Link to={PATHS.home}>
               <TinderIcon />
             </Link>
           </li>
 
-          <li>
+          <li className="icon">
             <SearchFooterIcon />
           </li>
 
-          <li>
+          <li className="icon">
             <DiamondIcon />
           </li>
 
-          <li
-            className={clsx(
-              pathname === PATHS.matches ? styles.active : '',
-              'grow'
-            )}
-          >
+          <li className={clsx('icon')}>
             <Link to={PATHS.matches}>
               <ChatIcon />
             </Link>
+          </li>
+
+          <li className="icon">
+            <PersonIcon />
           </li>
         </ul>
       </nav>

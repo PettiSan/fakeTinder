@@ -1,5 +1,4 @@
-import midiaSong from '@assets/Marshmello_Happier.mp3'
-import midiaVideo from '@assets/naruto_balanco_sad.mp4'
+import midiaSong from '@assets/audio_salvame.mp3'
 import { DevTools } from '@components/devTools/DevTools'
 import { Loading } from '@components/loading/Loading'
 import Midia from '@components/midia/Midia'
@@ -11,7 +10,7 @@ import { ScrollToTop } from './ScrollToTop'
 export function Router() {
   return (
     <BrowserRouter>
-      <Midia video={midiaVideo} song={midiaSong} />
+      <Midia song={midiaSong} />
 
       {import.meta.env.DEV && <DevTools />}
 

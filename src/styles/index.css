@@ -6,15 +6,10 @@
   @apply relative overflow-hidden bg-black h-screen w-screen flex justify-center items-center;
 }
 
-.grow {
-  animation: grow 1.5s infinite ease;
+.icon {
+  @apply text-2xl text-[#808080];
+}
 
-  @keyframes grow {
-    0% {
-      transform: scale(1);
-    }
-    100% {
-      transform: scale(1.1);
-    }
-  }
+.swipe {
+  @apply absolute h-full w-full;
 }

@@ -1,10 +1,9 @@
+import img4 from '@assets/avatar_miguel.jpg'
 import img1 from '@assets/match_1.png'
 import img2 from '@assets/match_2.png'
 import img3 from '@assets/match_3.png'
-import img4 from '@assets/match_4.png'
 import { CardNewMatch } from '@components/cardNewMatch/CardNewMatch'
 import clsx from 'clsx'
-import React from 'react'
 import styles from './CardNewMatchList.module.css'
 
 const db = [
@@ -21,7 +20,7 @@ const db = [
     image: img3,
   },
   {
-    name: 'Michael',
+    name: 'Miguel',
     image: img4,
   },
 ]

@@ -8,17 +8,12 @@ const ChatPage = lazy(() => import('@pages/chatPage/ChatPage'))
 const ItsAMatchePage = lazy(
   () => import('@pages/itsAMatchePage/ItsAMatchePage')
 )
-const ChatWhatIfPage = lazy(
-  () => import('@pages/chatWhatIfPage/ChatWhatIfPage')
-)
-
 export function Routes() {
   const element = useRoutes([
     { path: PATHS.home, element: <HomePage /> },
     { path: PATHS.matches, element: <MatchesPage /> },
     { path: PATHS.chat, element: <ChatPage /> },
     { path: PATHS.itsAMatche, element: <ItsAMatchePage /> },
-    { path: PATHS.chatWhatIf, element: <ChatWhatIfPage /> },
   ])
 
   return <>{element}</>

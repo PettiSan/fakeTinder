@@ -37,7 +37,17 @@
     }
   }
 
-  .chatPage_whatIf {
-    @apply absolute bottom-0 text-xs font-bold underline;
+  .chatPage_confirmation {
+    @apply flex bg-greyDark p-2 rounded-md text-sm;
+
+    ul {
+      li {
+        span {
+        }
+
+        b {
+        }
+      }
+    }
   }
 }

@@ -18,7 +18,7 @@ export function Card(props: CardProps) {
   const handleCardLeftScreen = useCallback(
     (identifier: string) => {
       // * último card
-      if (identifier === 'Filipe Petitemberte') {
+      if (identifier === 'Combo') {
         navigate(PATHS.itsAMatche)
       }
     },
@@ -27,11 +27,12 @@ export function Card(props: CardProps) {
 
   return (
     <TinderCard
+      swipeRequirementType="position"
       className="swipe"
       key={title}
       preventSwipe={['up', 'down']}
-      onCardLeftScreen={() => handleCardLeftScreen(title)}
-      swipeThreshold={300}
+      onCardLeftScreen={(a) => handleCardLeftScreen(title)}
+      // swipeThreshold={300}
     >
       <div
         style={{ backgroundImage: 'url(' + img + ')' }}

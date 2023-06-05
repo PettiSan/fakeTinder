@@ -1,5 +1,5 @@
 .defaultTemplate {
-  @apply flex flex-col bg-greyLight h-[49.375rem] w-[23.4375rem] m-auto rounded-3xl z-10;
+  @apply flex flex-col bg-greyLight h-[44.375rem] w-[23.4375rem] m-auto rounded-3xl z-10;
 
   .main {
     @apply flex flex-1 flex-col;

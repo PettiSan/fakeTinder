@@ -1,17 +1,13 @@
-import img1 from '@assets/10_10_cute.png'
-import img5 from '@assets/card_board_games.png'
-import img9 from '@assets/card_canada.png'
-import img6 from '@assets/card_karambit_autotronic.png'
-import img7 from '@assets/card_lamen.png'
-import img10 from '@assets/card_massa_brocolis.png'
-import img4 from '@assets/card_naruto_smile.png'
-import img8 from '@assets/card_the_chefs.png'
-import img2 from '@assets/card_tlou2.png'
-import img3 from '@assets/card_vingaceiros.png'
+import imgLoiro from '@assets/card_10_10_loiro.jpg'
+import imgCebola from '@assets/card_cebola_outback.jpg'
+import imgCombo from '@assets/card_combo.jpeg'
+import imgCorolla from '@assets/card_corolla.webp'
+import imgComida from '@assets/card_outback_comida.webp'
+import imgSobremesa from '@assets/card_sobremesa_outback.jpg'
 import teste from '@assets/teste.gif'
 import { Card } from '@components/card/Card'
 import clsx from 'clsx'
-import React, { useState } from 'react'
+import { useState } from 'react'
 import styles from './CardList.module.css'
 
 type Card = {
@@ -21,44 +17,28 @@ type Card = {
 
 const db: Card = [
   {
-    title: 'Filipe Petitemberte',
-    url: img1,
+    title: 'Combo',
+    url: imgCombo,
   },
   {
-    title: 'TLOU2',
-    url: img2,
+    title: 'Outback sobremesa',
+    url: imgSobremesa,
   },
   {
-    title: 'Vingaceiros',
-    url: img3,
+    title: 'Outback cebola',
+    url: imgCebola,
   },
   {
-    title: 'Naruto',
-    url: img4,
+    title: 'Outback ribs',
+    url: imgComida,
   },
   {
-    title: 'Board Games',
-    url: img5,
+    title: 'Corolla',
+    url: imgCorolla,
   },
   {
-    title: 'CSGO Karambit',
-    url: img6,
-  },
-  {
-    title: 'Lamen',
-    url: img7,
-  },
-  {
-    title: 'The Chefs',
-    url: img8,
-  },
-  {
-    title: 'Canada',
-    url: img9,
-  },
-  {
-    title: 'Massa de Brócolis com Molho Branco',
-    url: img10,
+    title: 'Filipe Loiro',
+    url: imgLoiro,
   },
 ]
 

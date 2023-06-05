@@ -1,6 +1,5 @@
-import React from 'react'
-import { IoLogoWechat } from 'react-icons/io5'
+import { HiChatBubbleLeftRight } from 'react-icons/hi2'
 
 export function ChatIcon() {
-  return <IoLogoWechat />
+  return <HiChatBubbleLeftRight />
 }
