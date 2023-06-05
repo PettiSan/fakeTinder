@@ -7,7 +7,7 @@
 }
 
 .template {
-  @apply flex flex-col h-[90vh] w-[97vw] m-auto rounded-3xl z-10;
+  @apply flex flex-col h-[90vh] w-[97vw] max-w-sm m-auto rounded-3xl z-10;
 }
 
 .icon {
