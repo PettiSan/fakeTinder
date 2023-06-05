@@ -31,8 +31,8 @@ export function Card(props: CardProps) {
       className="swipe"
       key={title}
       preventSwipe={['up', 'down']}
-      onCardLeftScreen={(a) => handleCardLeftScreen(title)}
-      // swipeThreshold={300}
+      onCardLeftScreen={() => handleCardLeftScreen(title)}
+      // swipeThreshold={-100}
     >
       <div
         style={{ backgroundImage: 'url(' + img + ')' }}

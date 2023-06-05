@@ -16,8 +16,7 @@ const matchs = [
   {
     name: 'Filipe Petitemberte',
     image: img1,
-    lastMessage:
-      'Boa noite, procurei Massa de Brocólis no google e só apareceu pizzas, é isso mesmo, kkkkk?',
+    lastMessage: 'Partiu Outback nesse feriado?',
     canChat: true,
   },
   {
