@@ -34,7 +34,12 @@ export function Footer() {
             <DiamondIcon />
           </li>
 
-          <li className={clsx('icon')}>
+          <li
+            className={clsx(
+              'icon',
+              pathname === PATHS.matches ? styles.active : ''
+            )}
+          >
             <Link to={PATHS.matches}>
               <ChatIcon />
             </Link>

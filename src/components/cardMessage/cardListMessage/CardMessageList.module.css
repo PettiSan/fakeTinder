@@ -1,5 +1,5 @@
 .cardMessageList {
-  @apply max-h-[22rem] space-y-3 overflow-y-auto;
+  @apply max-h-[21.5rem] space-y-3 overflow-y-auto;
 
   &::-webkit-scrollbar {
     width: 2px;

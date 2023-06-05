@@ -1,7 +1,8 @@
 import { Footer } from '@template/footer/Footer'
 import { Header } from '@template/header/Header'
 import Seo from '@template/seo/Seo'
-import React, { ReactNode } from 'react'
+import clsx from 'clsx'
+import { ReactNode } from 'react'
 import styles from './DefaultTemplate.module.css'
 
 type DefaultTemplateProps = {
@@ -13,7 +14,7 @@ export default function DefaultTemplate(props: DefaultTemplateProps) {
   const { pageSeo, children } = props
 
   return (
-    <div className={styles.defaultTemplate}>
+    <div className={clsx(styles.defaultTemplate, 'template')}>
       <Header />
 
       <main className={styles.main}>

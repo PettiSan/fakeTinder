@@ -6,6 +6,10 @@
   @apply relative overflow-hidden bg-black h-screen w-screen flex justify-center items-center;
 }
 
+.template {
+  @apply flex flex-col h-[90vh] w-[97vw] m-auto rounded-3xl z-10;
+}
+
 .icon {
   @apply text-2xl text-[#808080];
 }

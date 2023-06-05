@@ -1,5 +1,5 @@
 .chatTemplate {
-  @apply flex flex-col bg-white h-[44.375rem] w-[23.4375rem] m-auto rounded-3xl z-10;
+  @apply bg-white;
 
   .header {
     @apply flex space-x-6 items-center py-3 px-4 border-b border-solid border border-greyLight rounded-t-3xl;

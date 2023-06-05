@@ -20,7 +20,7 @@ export default function ChatTemplate(props: DefaultTemplateProps) {
   const { pageSeo, children } = props
 
   return (
-    <div className={styles.chatTemplate}>
+    <div className={clsx(styles.chatTemplate, 'template')}>
       <div className={clsx(styles.header)}>
         <div className={clsx(styles.header_arrowBack)}>
           <Link to={PATHS.matches}>
