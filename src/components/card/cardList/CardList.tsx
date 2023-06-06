@@ -1,3 +1,4 @@
+import midiaFazOUrro from '@assets/audio_faz_o_urro.mp3'
 import imgLoiro from '@assets/card_10_10_loiro.jpg'
 import imgCebola from '@assets/card_cebola_outback.jpg'
 import imgCombo from '@assets/card_combo.jpeg'
@@ -8,8 +9,6 @@ import swipeAnimation from '@assets/swipeAnimation.gif'
 import { Card } from '@components/card/Card'
 import clsx from 'clsx'
 import { useCallback, useState } from 'react'
-import { useStateContext } from 'state/context'
-import { ActionType } from 'state/reducer'
 import styles from './CardList.module.css'
 
 type Card = {
@@ -47,11 +46,16 @@ const db: Card = [
 export function CardList() {
   const [displaySwipeGiff, setDisplaySwipeGiff] = useState<boolean>(true)
 
-  const { dispatch } = useStateContext()
+  const [audio, _] = useState(new Audio(midiaFazOUrro))
+  audio.volume = 0.2
 
   const handleSwipe = useCallback(() => {
-    dispatch && dispatch({ type: ActionType.SET_PLAY_AUDIO, payload: true })
-  }, [dispatch])
+    audio.play()
+
+    return () => {
+      audio.pause()
+    }
+  }, [audio])
 
   setTimeout(() => {
     setDisplaySwipeGiff(false)

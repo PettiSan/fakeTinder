@@ -17,7 +17,7 @@ export default function Midia(props: MidiaProps) {
 
   useEffect(() => {
     if (audio.paused || playAudio) {
-      audio.play()
+      // audio.play()
 
       audio.volume = 0.1
       audio.autoplay = true

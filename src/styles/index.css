@@ -3,7 +3,7 @@
 @import 'tailwindcss/utilities';
 
 #root {
-  @apply relative overflow-hidden bg-black h-screen w-screen flex justify-center items-center;
+  @apply relative overflow-hidden bg-black h-screen w-screen flex justify-center items-center bg-[url('../assets/faz_o_urro.jpg')] bg-[length:50px];
 }
 
 .template {

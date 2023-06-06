@@ -1,8 +1,10 @@
+import midiaSalvame from '@assets/audio_salvame.mp3'
 import avatarFile from '@assets/card_10_10_loiro.jpg'
 import Avatar from '@components/avatar/Avatar'
 import { CalendarButton } from '@components/calendarButton/CalendarButton'
 import ChatTemplate from '@template/chat/ChatTemplate'
 import clsx from 'clsx'
+import { useEffect, useState } from 'react'
 import styles from './ChatPage.module.css'
 
 enum FROM_WHO {
@@ -150,6 +152,17 @@ const db: Messages = [
 ]
 
 export default function ChatPage() {
+  const [audio, _] = useState(new Audio(midiaSalvame))
+  audio.volume = 0.1
+  audio.autoplay = true
+  audio.loop = true
+
+  useEffect(() => {
+    if (audio.paused) {
+      audio.play()
+    }
+  }, [audio])
+
   return (
     <ChatTemplate pageSeo="Chat">
       <div className={clsx(styles.chatPage)}>
