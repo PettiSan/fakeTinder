@@ -8,10 +8,11 @@ import styles from './Card.module.css'
 type CardProps = {
   title: string
   img: string
+  onSwipe?: () => void
 }
 
 export function Card(props: CardProps) {
-  const { img, title } = props
+  const { img, title, onSwipe } = props
 
   const navigate = useNavigate()
 
@@ -32,7 +33,7 @@ export function Card(props: CardProps) {
       key={title}
       preventSwipe={['up', 'down']}
       onCardLeftScreen={() => handleCardLeftScreen(title)}
-      // swipeThreshold={-100}
+      onSwipe={onSwipe}
     >
       <div
         style={{ backgroundImage: 'url(' + img + ')' }}

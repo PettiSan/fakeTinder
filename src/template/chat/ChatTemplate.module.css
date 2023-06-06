@@ -46,30 +46,10 @@
   }
 
   .main {
-    @apply flex flex-1 flex-col;
+    @apply flex flex-1 flex-col overflow-y-auto;
 
     .content {
-      @apply relative flex-1 p-2 rounded-lg max-h-[37rem] overflow-auto;
-
-      &::-webkit-scrollbar {
-        width: 2px;
-      }
-
-      /* Track */
-      &::-webkit-scrollbar-track {
-        @apply bg-greyLight;
-      }
-
-      /* Handle */
-      &::-webkit-scrollbar-thumb {
-        background: #888;
-        @apply bg-red;
-      }
-
-      /* Handle on hover */
-      &::-webkit-scrollbar-thumb:hover {
-        @apply bg-greyDark;
-      }
+      @apply relative flex-1 p-2 rounded-lg overflow-auto;
     }
   }
 }

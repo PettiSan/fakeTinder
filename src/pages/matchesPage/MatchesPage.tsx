@@ -71,12 +71,7 @@ export default function MatchesPage() {
         </div>
 
         {/* New Matches Section */}
-        <div
-          className={clsx(
-            styles.matchesPage_sectionWrapper,
-            styles.matchesPage_newMatches
-          )}
-        >
+        <div className={clsx(styles.matchesPage_sectionWrapper)}>
           <span className={clsx(styles.matchesPage_sectionTitle)}>
             Novos Matches
           </span>
@@ -88,7 +83,7 @@ export default function MatchesPage() {
         <div
           className={clsx(
             styles.matchesPage_sectionWrapper,
-            styles.matchesPage_newMatches
+            styles.matchesPage_messages
           )}
         >
           <span className={clsx(styles.matchesPage_sectionTitle)}>

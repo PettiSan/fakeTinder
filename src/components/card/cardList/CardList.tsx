@@ -4,10 +4,12 @@ import imgCombo from '@assets/card_combo.jpeg'
 import imgCorolla from '@assets/card_corolla.webp'
 import imgComida from '@assets/card_outback_comida.webp'
 import imgSobremesa from '@assets/card_sobremesa_outback.jpg'
-import teste from '@assets/teste.gif'
+import swipeAnimation from '@assets/swipeAnimation.gif'
 import { Card } from '@components/card/Card'
 import clsx from 'clsx'
-import { useState } from 'react'
+import { useCallback, useState } from 'react'
+import { useStateContext } from 'state/context'
+import { ActionType } from 'state/reducer'
 import styles from './CardList.module.css'
 
 type Card = {
@@ -45,6 +47,12 @@ const db: Card = [
 export function CardList() {
   const [displaySwipeGiff, setDisplaySwipeGiff] = useState<boolean>(true)
 
+  const { dispatch } = useStateContext()
+
+  const handleSwipe = useCallback(() => {
+    dispatch && dispatch({ type: ActionType.SET_PLAY_AUDIO, payload: true })
+  }, [dispatch])
+
   setTimeout(() => {
     setDisplaySwipeGiff(false)
   }, 3000)
@@ -52,12 +60,17 @@ export function CardList() {
   return (
     <div className={clsx(styles.cardList)}>
       {db.map((character, key) => (
-        <Card title={character.title} img={character.url} key={key} />
+        <Card
+          title={character.title}
+          img={character.url}
+          key={key}
+          onSwipe={handleSwipe}
+        />
       ))}
 
       {displaySwipeGiff && (
         <div className={clsx(styles.swipe)}>
-          <img src={teste} alt="" />
+          <img src={swipeAnimation} alt="Animação de arrastar para o lado" />
         </div>
       )}
     </div>

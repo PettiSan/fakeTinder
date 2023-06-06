@@ -1,5 +1,5 @@
 .matchesPage {
-  @apply space-y-3 px-2;
+  @apply space-y-3 px-2 h-full;
 
   .matchesPage_searchBar {
     @apply flex items-center space-x-3;

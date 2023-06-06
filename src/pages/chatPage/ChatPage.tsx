@@ -82,6 +82,10 @@ const db: Messages = [
         from: FROM_WHO.ME,
       },
       {
+        text: 'pq não posso quarta, estou muito ocupada...',
+        from: FROM_WHO.ME,
+      },
+      {
         text: 'Bah é que tem NBA nos outros dias, sabe... prioridades 🏀🏀🏀',
         from: FROM_WHO.OTHER,
         displayAvatar: true,
@@ -113,11 +117,11 @@ const db: Messages = [
         displayAvatar: true,
       },
       {
-        text: 'só posso quarta mesmo, vai ter que segurar a saudade...',
+        text: 'vai ter que segurar a saudade...',
         from: FROM_WHO.OTHER,
       },
       {
-        text: 'Quarta, passo ai de carro ás 20hrs, vamos para o Outback do Praia de Belas ai perto, bater um papo e rir',
+        text: 'Sexta, passo ai de carro ás 20hrs, vamos para o Outback do Praia de Belas ai perto, bater um papo e rir',
         from: FROM_WHO.OTHER,
       },
       {
@@ -133,7 +137,7 @@ const db: Messages = [
         from: FROM_WHO.ME,
       },
       {
-        text: 'hahaha, segredo, quarta eu te conto😉',
+        text: 'hahaha, segredo, sexta eu te conto😉',
         from: FROM_WHO.OTHER,
         displayAvatar: true,
       },
@@ -182,7 +186,7 @@ export default function ChatPage() {
           <ul>
             <li>
               <span>
-                Data: <b>07/06/2023</b>
+                Data: <b>09/06/2023</b>
               </span>
             </li>
 

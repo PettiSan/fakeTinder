@@ -2,7 +2,7 @@
   @apply bg-greyLight;
 
   .main {
-    @apply flex flex-1 flex-col;
+    @apply flex flex-1 flex-col overflow-y-auto;
 
     .content {
       @apply flex-1 p-2 rounded-lg;

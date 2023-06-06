@@ -22,8 +22,8 @@ export function CalendarButton(props: CalendarButtonProps) {
     <div title="Add to Calendar" className="addeventatc text-center ">
       {children}
       <span className="date_format">DD/MM/YYYY</span>
-      <span className="start">07/06/2023 08:00 PM</span>
-      <span className="end">08/06/2023 01:00 AM</span>
+      <span className="start">09/06/2023 08:00 PM</span>
+      <span className="end">10/06/2023 01:00 AM</span>
       <span className="timezone">America/Sao_Paulo</span>
       <span className="title">Outback Night</span>
       <span className="description">
