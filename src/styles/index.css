@@ -3,11 +3,11 @@
 @import 'tailwindcss/utilities';
 
 #root {
-  @apply relative overflow-hidden bg-black h-screen w-screen flex justify-center items-center bg-[url('../assets/faz_o_urro.jpg')] bg-[length:50px];
+  @apply relative overflow-hidden  bg-black h-screen w-screen flex justify-center items-start bg-[url('../assets/faz_o_urro.jpg')] bg-[length:50px];
 }
 
 .template {
-  @apply flex flex-col h-[90vh] w-[97vw] max-w-sm m-auto rounded-3xl z-10;
+  @apply flex flex-col h-[80vh] w-[97vw] max-w-sm m-auto rounded-3xl z-10 mt-10;
 }
 
 .icon {

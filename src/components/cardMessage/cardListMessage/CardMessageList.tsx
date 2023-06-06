@@ -23,6 +23,7 @@ export function CardMessageList(props: CardMessageListProps) {
           lastMessage={character.lastMessage}
           canChat={character.canChat}
           key={key}
+          highlight={key === 0 ? true : false}
         />
       ))}
     </div>

@@ -13,11 +13,11 @@ export interface Store {
 }
 
 export type StateContext = {
-  playAudio: boolean
+  allowAudio: boolean
 }
 
 export const defaultState: StateContext = {
-  playAudio: false,
+  allowAudio: false,
 }
 
 // * Cria o estado inicial
