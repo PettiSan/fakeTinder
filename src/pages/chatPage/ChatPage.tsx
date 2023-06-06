@@ -48,7 +48,7 @@ const db: Messages = [
         displayAvatar: true,
       },
       {
-        text: 'ur welcome, night night ai 😚',
+        text: 'ur welcome',
         from: FROM_WHO.OTHER,
       },
     ],
@@ -82,7 +82,7 @@ const db: Messages = [
         from: FROM_WHO.ME,
       },
       {
-        text: 'pq não posso quarta, estou muito ocupada...',
+        text: 'pq não posso quarta, estou muito ocupada infelizmente...',
         from: FROM_WHO.ME,
       },
       {
@@ -121,7 +121,7 @@ const db: Messages = [
         from: FROM_WHO.OTHER,
       },
       {
-        text: 'Sexta, passo ai de carro ás 20hrs, vamos para o Outback do Praia de Belas ai perto, bater um papo e rir',
+        text: 'Sábado então, passo ai de carro ás 20hrs, vamos para o Outback do Praia de Belas ai perto, bater um papo',
         from: FROM_WHO.OTHER,
       },
       {
