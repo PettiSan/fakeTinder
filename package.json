@@ -12,7 +12,8 @@
     "check-types": "tsc --noemit",
     "prepare": "npx husky install .husky",
     "prettier-format": "prettier --config .prettierrc.json 'src/**/*.tsx' --write",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "deploy": "yarn build && firebase deploy"
   },
   "repository": {
     "type": "git",
